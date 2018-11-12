@@ -1,3 +1,16 @@
+.technology-row {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.fa-main-icon {
+    font-size: 25vh;
+}
+
+.my-image {
+    background-image: url('assets/images/me.jpg');
+}
+
 .full-width-image {
     background-repeat: no-repeat;
     background-position-x: center;
@@ -6,12 +19,15 @@
     top: 0px;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 991.98px) {
     .full-width-image {
         min-height: 50vh;
     }
     .mobile-first {
         order: -1;
+    }
+    .fa-main-icon {
+        font-size: 10vh;
     }
 }
 
