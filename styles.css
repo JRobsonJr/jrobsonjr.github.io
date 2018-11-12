@@ -1,0 +1,71 @@
+.full-width-image {
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    top: 0px;
+}
+
+@media (max-width: 1199.98px) {
+    .full-width-image {
+        min-height: 50vh;
+    }
+    .mobile-first {
+        order: -1;
+    }
+}
+
+.vertical-align {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.align-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personal-info {
+    background-color: #9b1f35;
+    color: white;
+    padding: 20px;
+}
+
+.programming-info {
+    background-color: #4F6632;
+    color: white;
+    padding: 20px;
+}
+
+.other-info {
+    background-color: #6c2490;
+    color: white;
+    padding: 20px;
+}
+
+.contact-info {
+    background-color: #0b0313;
+    color: white;
+    padding: 20px;
+}
+
+.music-info {
+    background-color: #163a96;
+    color: white;
+    padding: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+h1 > a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
