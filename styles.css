@@ -1,5 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
 }
 
 .border {
@@ -13,8 +14,8 @@ body {
 }
 
 .technology-row {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 .fa-main-icon {
@@ -62,6 +63,25 @@ body {
     background-color: #9b1f35;
     color: white;
     padding: 20px;
+}
+
+.project-card {
+    color: #4F6632;
+    border-radius: 0;
+}
+
+.row.justify-content-around {
+    padding-bottom: 1vh;
+}
+
+a.project-link {
+    text-decoration: none;
+    background-color: #4F6632;
+}
+
+a.project-link:hover {
+    color: white;
+    background-color: rgba(79, 102, 50, 0.90);
 }
 
 .programming-info {
