@@ -1,3 +1,17 @@
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.border {
+    padding: 1vh;
+    border-color: lightgray;
+}
+
+.hello {
+    background-color: rgb(70, 85, 100);
+    color: lightgray;
+}
+
 .technology-row {
     padding-left: 50px;
     padding-right: 50px;
@@ -34,6 +48,7 @@
 .vertical-align {
     min-height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
