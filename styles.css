@@ -90,6 +90,7 @@ body {
 a.project-link {
     text-decoration: none;
     background-color: #4F6632;
+    margin: 1vh;
 }
 
 a.project-link:hover {
