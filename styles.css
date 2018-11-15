@@ -3,15 +3,31 @@ body {
     font-size: 1.2rem;
 }
 
+.hello-info {
+    background-color: rgb(70, 85, 100);
+    color: lightgray;
+}
+
+.min-height-100 {
+    min-height: 100vh;
+}
+
+.vertical-align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical-align.min-height-100 {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
 .border {
     padding: 1vh;
     border-color: lightgray;
 }
 
-.hello {
-    background-color: rgb(70, 85, 100);
-    color: lightgray;
-}
 
 .technology-row {
     padding-left: 5vw;
@@ -20,11 +36,6 @@ body {
 
 .fa-main-icon {
     font-size: 25vh;
-}
-
-.hello-there {
-    padding-top: 2vh;
-    padding-bottom: 2vh;
 }
 
 .my-image {
@@ -52,16 +63,6 @@ body {
     .row.justify-content-around {
         padding-bottom: 0;
     }
-}
-
-.min-height-100 {
-    min-height: 100vh;
-}
-
-.vertical-align {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .align-icon {
