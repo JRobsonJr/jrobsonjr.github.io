@@ -14,42 +14,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="./styles.css" rel="stylesheet">
+    <link href="./animate.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 
 <body>
     <div class="container-fluid hello">
-        <div class="vertical-align">
-            <article class="border">
-                <h1 class="display-3 text-center">HELLO THERE!</h1>
-                <h1 class="text-center">I'm Robson.</h1>
+        <div class="vertical-align min-height-100 hello-there">
+            <article>
+                <h1 class="animated fadeInUp delay-1s display-3 text-center">HELLO THERE!</h1>
+                <h1 class="animated fadeInUp delay-2s text-center">It's so very nice to meet you!</h1>
+                <br>
+                <h3 class="animated fadeInUp delay-4s text-center">Welcome to my portfolio!</h3>
+                <h3 class="animated fadeInUp delay-5s text-center">My name is ROBSON.</h3>
+                <br>
+                <h5 class="animated fadeInUp delay-7s text-center">And I promise that from now on, there will be no
+                    more CSS animations.</h5>
+                <h5 class="animated fadeInUp delay-7s text-center">You might be able to scroll down safely.</h5>
+                <h1 class="animated fadeInUp delay-9s display-3 text-center">&lt;3</h1>
             </article>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-6 col-sm-12 full-width-image mobile-first my-image"></div>
-            <div class="col-lg-6 col-sm-12 vertical-align personal-info">
+            <div class="col-lg-6 col-sm-12 vertical-align min-height-100 personal-info">
                 <article>
-                    <h1 class="display-4">That's me!</h1>
-                    <p>I was born and raised in Patos, Paraíba, Brazil. When I turned 17, I had to move to another
-                        city (Campina Grande,
-                        Paraíba, Brazil) because the university where I had always wanted to study was located
-                        there. By the way, I'm talking
-                        about the Federal University of Campina Grande (UFCG). Even though I had never had any
-                        experience with programming
-                        at all, I chose to study Computer Science because of my affinity with mathematics,
-                        videogames and computers. Yes,
-                        that's probably not a good enough reason in most cases, and yes, I decided where I wanted
-                        to study before deciding
-                        what I wanted to do. In spite of this, it's working and I'm in love with I'm getting to
-                        learn!</p>
-                    <p>Currently, I'm a researcher/developer at two laboratories based in my university: the Software
-                        Practices Laboratory (SPLab)
-                        and the Distributed Systems Laboratory (LSD). I work in a project called MaaS (Metal as a
-                        Service), which is a
-                        partnership between these labs, RedHat and Lenovo.</p>
+                    <h1 class="display-3">That's me!</h1>
+                    <p>I was born and raised in <b>Patos</b>, a small town in the state of Paraíba, Brazil. When I
+                        turned 17, I had to move to another city, <b>Campina Grande</b>, because the university where I
+                        had always wanted to study was located there. By the way, it's the <b>Federal University of
+                            Campina Grande (UFCG)</b> I'm talking about.
+                        <p>Even though I had never had any experience with programming at all, I chose to study
+                            <b>Computer Science</b> because of my affinity with mathematics, videogames and computers.
+                            Yes, that's probably not a good enough reason in most cases, and yes, I decided where I
+                            wanted to study before deciding what I wanted to do, which is not very usual. In spite of
+                            this, it's working and I'm in love with I'm getting to learn!</p>
+                        <p>Currently, I'm a <b>researcher/developer</b> at two laboratories based in my university: the
+                            Software Practices Laboratory (SPLab) and the Distributed Systems Laboratory (LSD). I work
+                            in a project called <b>MaaS (Metal as a Service)</b>, which is a partnership between these
+                            labs, RedHat and Lenovo.</p>
                 </article>
             </div>
         </div>
@@ -57,7 +62,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-7 vertical-align programming-info">
+            <div class="col-sm-7 vertical-align min-height-100 programming-info">
                 <article>
                     <h1 class="display-4">Programming</h1>
                     <p class="lead">Here are some open source projects I'm working on and their respective source
@@ -100,7 +105,7 @@
                     </div>
                 </article>
             </div>
-            <div class="col-sm-5 vertical-align programming-info">
+            <div class="col-sm-5 vertical-align min-height-100 programming-info">
                 <article>
                     <p class="lead">Some technologies I've used in my past programming experiences:</p>
                     <div class="row technology-row justify-content-between">
@@ -128,59 +133,64 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-6 other-info align-icon">
-                <h1>
-                    <i class="fas fa-pencil-alt fa-main-icon"></i>
-                </h1>
-            </div>
-            <div class="col-sm-6 vertical-align other-info">
+            <div class="col-sm-8 vertical-align min-height-100 other-info">
                 <article>
                     <h1 class="display-4">However...</h1>
                     <p class="lead">There's many other things that I love doing, such as</p>
                     <p>
                         <b>Writing</b>
-                        <br>I'm always doing it, consciously or not.
+                        <br>I'm always doing it, consciously or not. I've decided that if an idea pops out of nowhere,
+                        I have better write it down before it fades away (and I've learnt that the hard way).
                         <br>
                         <b>Playing videogames</b>
-                        <br>Mostly Nintendo 3DS and computer games.
+                        <br>Mostly Nintendo 3DS and computer games. I've also written about games for a few years for
+                        <a href="https://nintendoblast.com.br" target="_blank">Nintendo Blast</a>.
                         <br>
                         <b>Composing</b>
-                        <br>Well, I try. I still need to learn a lot of basics on that, but I'm working on creating
-                        myself a respectful database of poems and music ideas.
+                        <br>Well, I try. I still need to learn a lot of basics on that, like how to think of melody
+                        before lyrics or to be able to play an instrument. In the meantime, I'm working on creating
+                        myself a respectful database of poems and song ideas.
                         <br>
                         <b>Researching, reading, learning</b>
                         <br>I spend hours doing these. As a result, I can probably name you every song Taylor Swift
-                        has ever released or tell
-                        you the Metascore of most recently released pop albums (not exactly something I should be
-                        proud of, though).
-                        But sometimes I do learn interesting stuff and I think that's what we should all be doing.
+                        has ever released, which is something I should not be proud of. But I do learn nice things
+                        now and then and I think that's what we all should be doing.
                     </p>
                     <hr class="my-2">
-                    <p class="lead">There's also one thing I can't live without:</p>
+                    <p class="lead">If you've been paying attention, you might have noticed a pattern here... There's
+                        one thing I can't see myself without:</p>
                 </article>
+            </div>
+            <div class="col-sm-4 other-info mobile-first align-icon">
+                <h1>
+                    <i class="fas fa-pencil-alt fa-main-icon"></i>
+                </h1>
             </div>
         </div>
     </div>
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-6 vertical-align music-info">
+            <div class="col-sm-6 vertical-align min-height-100 music-info">
                 <article>
                     <h1 class="display-4">Music.</h1>
-                    <p class="lead">They should hang Melodrama by Lorde in the Louvre.</p>
                     <p>I'm listening to music all the time. When I love a piece of music, I listen to it over and
-                        over. That's why I keep
-                        artists such as Taylor Swift, Lorde, Sia, Bridgit Mendler, Grace VanderWaal, Katy Perry,
-                        Bleachers, Aurora, Ed
-                        Sheeran and Lady Gaga constantly on repeat. (And I didn't mention these names at random —
-                        they're the artists I've
-                        listened the most during last year.)</p>
-                    <p>I'm pretty sure you can learn a thing or two about me just by looking at the music I listen
-                        the most. If you're interested,
-                        here's one
-                        <a href="https://open.spotify.com/user/spotify/playlist/37i9dQZF1E9Um1HQs0iXq6">Spotify-curated
-                            playlist</a> containing some of the songs I've listened the most over the last year!</p>
-                    <p>I'm going to drop my Spotify and Last.fm accounts here... Just in case.</p>
+                        over and over and... over again.</p>
+                    <p>I'm pretty sure you can learn a lot about someone just by looking at the music they
+                        listen to the most. With that said, if you're interested in getting to know me better, here are
+                        some indications:</p>
+                    <ul>
+                        <li><a target="_blank" href="https://open.spotify.com/user/jrobsonjr/playlist/1K28FlYFq6NfwD61GKAXIr?si=FMMwA3UuTUmuWr9CJwCNfA">
+                                Here's a Spotify playlist</a> containing some of my all-time faves!</li>
+                        <li>My favorite album that's been released in 2018 is Infections Of A Different Kind (Step I),
+                            by
+                            Norwergian singer/songwriter/fairy AURORA.</li>
+                        <li>In 2017, I've spent more than 54 days listening to music. In 2018, I had already overcome
+                            this by around September.</li>
+                        <li>Lorde's Melodrama and Taylor Swift's Red are probably my favorite LPs of all time.</li>
+                    </ul>
+                    <p>Okay, that's enough. I'm also going to drop my Spotify and Last.fm accounts here... Just in
+                        case.</p>
                     <h1 class="text-center">
                         <a target="_blank" href="https://open.spotify.com/user/jrobsonjr?si=eBPHaNrXRUSzkUezT8mTRQ">
                             <i class="fab fa-spotify"></i>
@@ -189,17 +199,34 @@
                             <i class="fab fa-lastfm-square"></i>
                         </a>
                     </h1>
-                    <hr class="my-2">
-                    <p>I don't own that Melodrama cover image, though. Just saying.</p>
                 </article>
             </div>
-            <div class="col-sm-6 full-width-image mobile-first" [style.backgroundImage]="'url(assets/images/aoty.jpg)'">
+            <div class="col-sm-6 vertical-align min-height-100 music-info artist-list">
+                <article>
+                    <p class="lead">The artists/bands I've listened the most for the course of the last year:</p>
+                    <div class="row technology-row justify-content-between">
+                        <div class="col">
+                            <p class="text-center border">Paramore</p>
+                            <p class="text-center border">Taylor Swift</p>
+                            <p class="text-center border">AURORA</p>
+                            <p class="text-center border">Lorde</p>
+                            <p class="text-center border">Sia</p>
+                        </div>
+                        <div class="col">
+                            <p class="text-center border">Grace VanderWaal</p>
+                            <p class="text-center border">Bleachers</p>
+                            <p class="text-center border">Imogen Heap</p>
+                            <p class="text-center border">Lady Gaga</p>
+                            <p class="text-center border">Camila Cabello</p>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-sm-6 vertical-align contact-info">
+            <div class="col-sm-6 vertical-align min-height-100 contact-info">
                 <article>
                     <h1 class="display-4">And that's it!</h1>
                     <p class="lead">Know I think you're awesome, right?</p>
@@ -215,25 +242,22 @@
                         <br>See you around!</p>
                 </article>
             </div>
-            <div class="col-sm-6 contact-info align-icon">
-                <a target="_blank" href="https://github.com/jrobsonjr/CodeOwnership">
-                    <i class="contact-icons" name="fab fa-github-square"></i>
-                </a>
+            <div class="col-sm-6 contact-info vertical-align">
                 <h1 class="text-center">
                     <a target="_blank" href="https://github.com/jrobsonjr">
-                        <i class="contact-icons" name="fab fa-github-square"></i>
+                        <i class="contact-icons fab fa-github-square"></i>
                     </a>
                     <a target="_blank" href="mailto:jose.robson.junior@ccc.ufcg.edu.br">
-                        <i class="contact-icons" name="fas fa-envelope"></i>
+                        <i class="contact-icons fas fa-envelope"></i>
                     </a>
                     <a target="_blank" href="https://linkedin.com/in/jrobsonjr">
-                        <i class="contact-icons" name="fab fa-linkedin"></i>
+                        <i class="contact-icons fab fa-linkedin"></i>
                     </a>
                     <a target="_blank" href="https://fb.com/jrobsonjr">
-                        <i class="contact-icons" name="fab fa-facebook"></i>
+                        <i class="contact-icons fab fa-facebook"></i>
                     </a>
                     <a target="_blank" href="https://t.me/jrobsonjr">
-                        <i class="contact-icons" name="fab fa-telegram"></i>
+                        <i class="contact-icons fab fa-telegram"></i>
                     </a>
                 </h1>
             </div>
