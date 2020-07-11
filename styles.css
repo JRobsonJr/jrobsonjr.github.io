@@ -5,7 +5,18 @@ body {
 
 .hello-info {
     background-color: rgb(70, 85, 100);
-    color: lightgray;
+    background-image: url('assets/images/me.jpg');
+    background-size: cover;
+    background-position: left;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 767.98px) {
+    .hello-info {
+        background-image: url('assets/images/me_mf.jpg');
+        background-position: center;
+    }
 }
 
 .min-height-100 {
@@ -28,7 +39,6 @@ body {
     border-color: lightgray;
 }
 
-
 .technology-row {
     padding-left: 5vw;
     padding-right: 5vw;
@@ -39,7 +49,7 @@ body {
 }
 
 .my-image {
-    background-image: url('assets/images/me.jpg');
+    background-image: url('assets/images/me.jpeg');
 }
 
 .full-width-image {
@@ -131,7 +141,7 @@ a {
     text-decoration: underline;
 }
 
-h1 > a {
+h1>a {
     text-decoration: none;
 }
 
