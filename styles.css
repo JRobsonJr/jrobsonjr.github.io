@@ -1,35 +1,39 @@
+:root {
+    --dramatic-red: #9b1f35;
+    --dramatic-green: #4F6632;
+    --dramatic-purple: #6c2490;
+    --dramatic-navy: #163a96;
+    --dramatic-black: #0b0313;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
+    line-height: 1.5;
 }
 
-.hello-info {
-    background-color: rgb(70, 85, 100);
-    background-image: url('assets/images/me.jpg');
-    background-size: cover;
-    background-position: left;
+a {
     color: white;
-    font-family: 'Poppins', sans-serif;
+    text-decoration: underline;
 }
 
-@media (max-width: 767.98px) {
-    .hello-info {
-        background-image: url('assets/images/me_mf.jpg');
-        background-position: center;
-    }
+a:hover {
+    color: white;
+    text-decoration: none;
 }
 
-.min-height-100 {
-    min-height: 100vh;
+h1>a {
+    text-decoration: none;
 }
 
-.vertical-align {
+.row.justify-content-around {
+    padding-bottom: 1vh;
+}
+
+.content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.vertical-align.min-height-100 {
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
@@ -39,20 +43,40 @@ body {
     border-color: lightgray;
 }
 
-.technology-row {
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-
 .fa-main-icon {
     font-size: 25vh;
 }
 
-.my-image {
-    background-image: url('assets/images/me.jpeg');
+.align-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.full-width-image {
+.project-card {
+    color: var(--dramatic-green);
+    border-radius: 0;
+}
+
+.hello-section {
+    background-color: var(--dramatic-black);
+    background-image: url('assets/images/me.jpg');
+    background-size: cover;
+    background-position: left;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.personal-section {
+    background-color: var(--dramatic-red);
+    color: white;
+    padding: 20px;
+    padding-left: 5vh;
+    padding-right: 5vw;
+}
+
+.personal-section-picture {
+    background-image: url('assets/images/me.jpeg');
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
@@ -60,8 +84,58 @@ body {
     top: 0px;
 }
 
+.programming-section {
+    background-color: var(--dramatic-green);
+    color: white;
+    padding: 10vh;
+}
+
+.project-link {
+    text-decoration: none;
+    background-color: var(--dramatic-green);
+    margin: 1vh;
+}
+
+.project-link:hover {
+    color: white;
+    background-color: rgba(79, 102, 50, 0.90);
+}
+
+.technology-row {
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.hobbies-section {
+    background-color: var(--dramatic-purple);
+    color: white;
+    padding: 20px;
+    padding-left: 5vw;
+}
+
+.music-section {
+    background-color: var(--dramatic-navy);
+    color: white;
+    padding: 20px;
+    padding-left: 5vw;
+}
+
+.contact-section {
+    background-color: var(--dramatic-black);
+    color: white;
+    padding: 20px;
+    padding-left: 5vw;
+}
+
+@media (max-width: 767.98px) {
+    .hello-section {
+        background-image: url('assets/images/me_mf.jpg');
+        background-position: center;
+    }
+}
+
 @media (max-width: 991.98px) {
-    .full-width-image {
+    .personal-section-picture {
         min-height: 50vh;
     }
     .mobile-first {
@@ -73,79 +147,4 @@ body {
     .row.justify-content-around {
         padding-bottom: 0;
     }
-}
-
-.align-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.personal-info {
-    background-color: #9b1f35;
-    color: white;
-    padding: 20px;
-    padding-left: 5vh;
-    padding-right: 5vw;
-}
-
-.project-card {
-    color: #4F6632;
-    border-radius: 0;
-}
-
-.row.justify-content-around {
-    padding-bottom: 1vh;
-}
-
-a.project-link {
-    text-decoration: none;
-    background-color: #4F6632;
-    margin: 1vh;
-}
-
-a.project-link:hover {
-    color: white;
-    background-color: rgba(79, 102, 50, 0.90);
-}
-
-.programming-info {
-    background-color: #4F6632;
-    color: white;
-    padding: 10vh;
-}
-
-.other-info {
-    background-color: #6c2490;
-    color: white;
-    padding: 20px;
-    padding-left: 5vw;
-}
-
-.contact-info {
-    background-color: #0b0313;
-    color: white;
-    padding: 20px;
-    padding-left: 5vw;
-}
-
-.music-info {
-    background-color: #163a96;
-    color: white;
-    padding: 20px;
-    padding-left: 5vw;
-}
-
-a {
-    color: white;
-    text-decoration: underline;
-}
-
-h1>a {
-    text-decoration: none;
-}
-
-a:hover {
-    color: white;
-    text-decoration: none;
 }

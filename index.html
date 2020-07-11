@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4/css/tachyons.min.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
@@ -22,10 +21,10 @@
 </head>
 
 <body>
-    <div class="container-fluid hello-info">
-        <div class="vertical-align min-height-100">
-            <article class="text-center animated fadeInUp delay-1s">
-                <h1 class="display-3">HELLO THERE!</h1>
+    <div class=" hello-section">
+        <div class="content-wrapper min-vh-100">
+            <article class="tc animated fadeInUp delay-1s">
+                <h1 class="f-5">HELLO THERE!</h1>
                 <h1>It's so very nice to meet you!</h1>
                 <h3>My name is <b>Robson</b>.</h3>
                 <h3>Welcome to my portfolio!</h3>
@@ -33,13 +32,13 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6 col-sm-12 full-width-image mobile-first my-image"></div>
+    <div class="">
+        <div class="flex flex-wrap">
+            <div class="w-50-l mobile-first personal-section-picture"></div>
 
-            <div class="col-lg-6 col-sm-12 vertical-align min-height-100 personal-info">
+            <div class="w-50-l content-wrapper min-vh-100 personal-section">
                 <article>
-                    <h1 class="display-3">About me</h1>
+                    <h1 class="f1">About me</h1>
                     <p>I was born 19 years ago in <b>Patos</b>, a small town in the state of Paraíba, Brazil, where I
                         lived for most part of my life. When I turned 17, I had to move to another city, <b>Campina
                             Grande</b>, because the university where I had always wanted to study was located there. By
@@ -59,19 +58,19 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-7 vertical-align min-height-100 programming-info">
+    <div class="">
+        <div class="flex flex-wrap">
+            <div class="w-100 w-60-m content-wrapper min-vh-100 programming-section">
                 <article>
-                    <h1 class="display-4">Programming</h1>
+                    <h1 class="f1">Programming</h1>
                     <p class="lead">Here are some open source projects I'm working on and their respective source
                         codes!</p>
-                    <div class="row justify-content-around">
-                        <div class="col-sm-12 col-xl-4 card project-card text-center">
-                            <div class="card-body">
-                                <h5 class="card-title font-weight-bold">Spotify Web SDK</h5>
+                    <div class="flex flex-wrap justify-content-around">
+                        <div class="w-100 w-40-l bg-white project-card tc">
+                            <div class="pa3">
+                                <h5 class="b f4">Spotify Web SDK</h5>
                                 <p class="card-text">A JavaScript SDK for the Spotify Web API.</p>
-                                <div class="row">
+                                <div class="flex flex-wrap">
                                     <a class="col project-link border" target="_blank"
                                         href="https://github.com/calluswhatyouwant/spotify-web-sdk">Source</a>
                                     <a class="col project-link border" target="_blank"
@@ -79,24 +78,24 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-xl-4 card project-card text-center">
-                            <div class="card-body">
-                                <h5 class="card-title font-weight-bold">Musicritic</h5>
+                        <div class="w-100 w-40-l bg-white project-card tc">
+                            <div class="pa3">
+                                <h5 class="b f4">Musicritic</h5>
                                 <p class="card-text">Your personal
                                     music-specific Metacritic.</p>
-                                <div class="row justify-content-around">
+                                <div class="flex flex-wrap justify-content-around">
                                     <a class="col-6 project-link border" target="_blank"
                                         href="https://github.com/calluswhatyouwant/musicritic">Source</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-around">
-                        <div class="col-sm-12 col-xl-4 card project-card text-center">
-                            <div class="card-body">
-                                <h5 class="card-title font-weight-bold">CodeOwnership</h5>
+                    <div class="flex flex-wrap justify-content-around">
+                        <div class="w-100 w-40-l bg-white project-card tc">
+                            <div class="pa3">
+                                <h5 class="b f4">CodeOwnership</h5>
                                 <p class="card-text">Learn about the code ownership in your Java project.</p>
-                                <div class="row">
+                                <div class="flex flex-wrap">
                                     <a class="col project-link border" target="_blank"
                                         href="https://github.com/jrobsonjr/CodeOwnership">Source</a>
                                     <a class="col project-link border" target="_blank"
@@ -104,12 +103,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-xl-4 card project-card text-center">
-                            <div class="card-body">
-                                <h5 class="card-title font-weight-bold">CodeOwnership client</h5>
+                        <div class="w-100 w-40-l bg-white project-card tc">
+                            <div class="pa3">
+                                <h5 class="b f4">CodeOwnership client</h5>
                                 <p class="card-text">An early stage React application to serve as frontend for
                                     CodeOwnership.</p>
-                                <div class="row justify-content-around">
+                                <div class="flex flex-wrap justify-content-around">
                                     <a class="col-6 project-link border" target="_blank"
                                         href="https://github.com/jrobsonjr/code-ownership-client">Source</a>
                                 </div>
@@ -118,25 +117,25 @@
                     </div>
                 </article>
             </div>
-            <div class="col-sm-5 vertical-align min-height-100 programming-info">
+            <div class="w-100 w-40-m content-wrapper min-vh-100 programming-section">
                 <article>
                     <p class="lead">Some technologies I've used in my past programming experiences:</p>
-                    <div class="row technology-row justify-content-between">
+                    <div class="flex flex-wrap technology-row justify-content-between">
                         <div class="col">
-                            <p class="text-center border">JavaScript</p>
-                            <p class="text-center border">TypeScript</p>
-                            <p class="text-center border">HTML</p>
-                            <p class="text-center border">CSS</p>
-                            <p class="text-center border">React</p>
-                            <p class="text-center border">Angular</p>
+                            <p class="tc border">JavaScript</p>
+                            <p class="tc border">TypeScript</p>
+                            <p class="tc border">HTML</p>
+                            <p class="tc border">CSS</p>
+                            <p class="tc border">React</p>
+                            <p class="tc border">Angular</p>
                         </div>
                         <div class="col">
-                            <p class="text-center border">Node.js</p>
-                            <p class="text-center border">Python</p>
-                            <p class="text-center border">Java</p>
-                            <p class="text-center border">Haskell</p>
-                            <p class="text-center border">Bootstrap</p>
-                            <p class="text-center border">Material UI</p>
+                            <p class="tc border">Node.js</p>
+                            <p class="tc border">Python</p>
+                            <p class="tc border">Java</p>
+                            <p class="tc border">Haskell</p>
+                            <p class="tc border">Bootstrap</p>
+                            <p class="tc border">Material UI</p>
                         </div>
                     </div>
                 </article>
@@ -144,11 +143,11 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-8 vertical-align min-height-100 other-info">
+    <div class="">
+        <div class="flex flex-wrap">
+            <div class="col-sm-8 content-wrapper min-vh-100 hobbies-section">
                 <article>
-                    <h1 class="display-4">However...</h1>
+                    <h1 class="f1">However...</h1>
                     <p class="lead">There's many other things that I love doing, such as</p>
                     <p>
                         <b>Writing</b>
@@ -174,7 +173,7 @@
                         one thing I can't see myself without:</p>
                 </article>
             </div>
-            <div class="col-sm-4 other-info mobile-first align-icon">
+            <div class="col-sm-4 hobbies-section mobile-first align-icon">
                 <h1>
                     <i class="fas fa-pencil-alt fa-main-icon"></i>
                 </h1>
@@ -182,11 +181,11 @@
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6 vertical-align min-height-100 music-info">
+    <div class="">
+        <div class="flex flex-wrap">
+            <div class="w-50-l content-wrapper min-vh-100 music-section">
                 <article>
-                    <h1 class="display-4">Music.</h1>
+                    <h1 class="f1">Music.</h1>
                     <p>I'm listening to music all the time. When I love a piece of music, I listen to it over and
                         over and over and... over again.</p>
                     <p>I'm pretty sure you can learn a lot about someone just by looking at the music they
@@ -205,7 +204,7 @@
                     </ul>
                     <p>Okay, that's enough. I'm also going to drop my Spotify and Last.fm accounts here... Just in
                         case.</p>
-                    <h1 class="text-center">
+                    <h1 class="tc">
                         <a target="_blank" href="https://open.spotify.com/user/jrobsonjr?si=eBPHaNrXRUSzkUezT8mTRQ">
                             <i class="fab fa-spotify"></i>
                         </a>
@@ -215,34 +214,34 @@
                     </h1>
                 </article>
             </div>
-            <div class="col-sm-6 vertical-align min-height-100 music-info artist-list">
+            <div class="w-50-l content-wrapper min-vh-100 music-section artist-list">
                 <article>
                     <p class="lead">The artists/bands I've listened the most for the course of the last year:</p>
-                    <div class="row technology-row justify-content-between">
+                    <div class="flex flex-wrap technology-row justify-content-between">
                         <div class="col">
-                            <p class="text-center border">Paramore</p>
-                            <p class="text-center border">Taylor Swift</p>
-                            <p class="text-center border">AURORA</p>
-                            <p class="text-center border">Lorde</p>
-                            <p class="text-center border">Sia</p>
+                            <p class="tc border">Paramore</p>
+                            <p class="tc border">Taylor Swift</p>
+                            <p class="tc border">AURORA</p>
+                            <p class="tc border">Lorde</p>
+                            <p class="tc border">Sia</p>
                         </div>
                         <div class="col">
-                            <p class="text-center border">Grace VanderWaal</p>
-                            <p class="text-center border">Bleachers</p>
-                            <p class="text-center border">Imogen Heap</p>
-                            <p class="text-center border">Lady Gaga</p>
-                            <p class="text-center border">Camila Cabello</p>
+                            <p class="tc border">Grace VanderWaal</p>
+                            <p class="tc border">Bleachers</p>
+                            <p class="tc border">Imogen Heap</p>
+                            <p class="tc border">Lady Gaga</p>
+                            <p class="tc border">Camila Cabello</p>
                         </div>
                     </div>
                 </article>
             </div>
         </div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6 vertical-align min-height-100 contact-info">
+    <div class="">
+        <div class="flex flex-wrap">
+            <div class="w-50-l content-wrapper min-vh-100 contact-section">
                 <article>
-                    <h1 class="display-4">And that's it!</h1>
+                    <h1 class="f1">And that's it!</h1>
                     <p class="lead">Know I think you're awesome, right?</p>
                     <p>Hey! I don't know you super well, but you read it all... That might mean you're the same as
                         me, or kind of. If you want to contact me, feel free to reach me out in any of the
@@ -256,8 +255,8 @@
                         <br>See you around!</p>
                 </article>
             </div>
-            <div class="col-sm-6 contact-info vertical-align">
-                <h1 class="text-center">
+            <div class="w-50-l contact-section content-wrapper">
+                <h1 class="tc">
                     <a target="_blank" href="https://github.com/jrobsonjr">
                         <i class="contact-icons fab fa-github-square"></i>
                     </a>
