@@ -22,7 +22,7 @@ a:hover {
     text-decoration: none;
 }
 
-h1>a {
+.icon {
     text-decoration: none;
 }
 
@@ -38,8 +38,6 @@ h1>a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
 }
 
 .fa-main-icon {
@@ -69,9 +67,6 @@ h1>a {
 .personal-section {
     background-color: var(--dramatic-red);
     color: white;
-    padding: 20px;
-    padding-left: 5vh;
-    padding-right: 5vw;
 }
 
 .personal-section-picture {
@@ -86,7 +81,6 @@ h1>a {
 .programming-section {
     background-color: var(--dramatic-green);
     color: white;
-    padding: 10vh;
 }
 
 .project-link {
@@ -108,34 +102,30 @@ h1>a {
 .hobbies-section {
     background-color: var(--dramatic-purple);
     color: white;
-    padding: 20px;
-    padding-left: 5vw;
 }
 
 .music-section {
     background-color: var(--dramatic-navy);
     color: white;
-    padding: 20px;
-    padding-left: 5vw;
 }
 
 .contact-section {
     background-color: var(--dramatic-black);
     color: white;
-    padding: 20px;
-    padding-left: 5vw;
 }
 
-@media (max-width: 767.98px) {
+/*
+small
+30em
+medium
+60em
+large
+*/
+
+@media screen and (max-width: 60em) {
     .hello-section {
         background-image: url('assets/images/me_mf.jpg');
         background-position: center;
-    }
-}
-
-@media (max-width: 991.98px) {
-    .personal-section-picture {
-        min-height: 50vh;
     }
     .mobile-first {
         order: -1;
