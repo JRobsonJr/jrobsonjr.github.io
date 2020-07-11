@@ -26,8 +26,12 @@ h1>a {
     text-decoration: none;
 }
 
-.row.justify-content-around {
-    padding-bottom: 1vh;
+.min-w-20 {
+    min-width: 20%;
+}
+
+.min-w-40 {
+    min-width: 40%;
 }
 
 .content-wrapper {
@@ -38,16 +42,11 @@ h1>a {
     padding-bottom: 2vh;
 }
 
-.border {
-    padding: 1vh;
-    border-color: lightgray;
-}
-
 .fa-main-icon {
     font-size: 25vh;
 }
 
-.align-icon {
+.align-center {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +54,7 @@ h1>a {
 
 .project-card {
     color: var(--dramatic-green);
-    border-radius: 0;
+    margin-bottom: 1rem;
 }
 
 .hello-section {
@@ -93,7 +92,7 @@ h1>a {
 .project-link {
     text-decoration: none;
     background-color: var(--dramatic-green);
-    margin: 1vh;
+    margin: .25rem;
 }
 
 .project-link:hover {
@@ -143,8 +142,5 @@ h1>a {
     }
     .fa-main-icon {
         font-size: 10vh;
-    }
-    .row.justify-content-around {
-        padding-bottom: 0;
     }
 }
