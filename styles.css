@@ -87,7 +87,6 @@ a:hover {
     top: 0px;
 }
 
-
 @media screen and (max-width: 60em) {
     .hello-section {
         background-image: url('assets/images/me_mf.jpg');
