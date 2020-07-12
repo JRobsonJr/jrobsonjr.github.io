@@ -1,20 +1,24 @@
 :root {
-    --dramatic-red: #9b1f35;
-    --dramatic-green: #4F6632;
-    --dramatic-purple: #6c2490;
-    --dramatic-navy: #163a96;
     --dramatic-black: #0b0313;
+    --dramatic-green: #4F6632;
+    --dramatic-navy: #163a96;
+    --dramatic-purple: #6c2490;
+    --dramatic-red: #9b1f35;
 }
 
 body {
     font-family: 'Lato', sans-serif;
     font-size: 1.2rem;
     line-height: 1.5;
+    color: white;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
     color: white;
-    text-decoration: underline;
 }
 
 a:hover {
@@ -22,8 +26,28 @@ a:hover {
     text-decoration: none;
 }
 
-.icon {
-    text-decoration: none;
+.dramatic-green {
+    color: var(--dramatic-green);
+}
+
+.bg-dramatic-black {
+    background-color: var(--dramatic-black);
+}
+
+.bg-dramatic-green {
+    background-color: var(--dramatic-green);
+}
+
+.bg-dramatic-navy {
+    background-color: var(--dramatic-navy);
+}
+
+.bg-dramatic-purple {
+    background-color: var(--dramatic-purple);
+}
+
+.bg-dramatic-red {
+    background-color: var(--dramatic-red);
 }
 
 .min-w-20 {
@@ -34,13 +58,11 @@ a:hover {
     min-width: 40%;
 }
 
-.content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.min-vh-50 {
+    min-height: 50vh;
 }
 
-.fa-main-icon {
+.fa-pencil-alt {
     font-size: 25vh;
 }
 
@@ -50,87 +72,34 @@ a:hover {
     justify-content: center;
 }
 
-.project-card {
-    color: var(--dramatic-green);
-    margin-bottom: 1rem;
-}
-
 .hello-section {
-    background-color: var(--dramatic-black);
     background-image: url('assets/images/me.jpg');
     background-size: cover;
     background-position: left;
-    color: white;
     font-family: 'Poppins', sans-serif;
-}
-
-.personal-section {
-    background-color: var(--dramatic-red);
-    color: white;
 }
 
 .personal-section-picture {
     background-image: url('assets/images/me.jpeg');
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: center;
     background-size: cover;
     top: 0px;
 }
 
-.programming-section {
-    background-color: var(--dramatic-green);
-    color: white;
-}
-
-.project-link {
-    text-decoration: none;
-    background-color: var(--dramatic-green);
-    margin: .25rem;
-}
-
-.project-link:hover {
-    color: white;
-    background-color: rgba(79, 102, 50, 0.90);
-}
-
-.technology-row {
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-
-.hobbies-section {
-    background-color: var(--dramatic-purple);
-    color: white;
-}
-
-.music-section {
-    background-color: var(--dramatic-navy);
-    color: white;
-}
-
-.contact-section {
-    background-color: var(--dramatic-black);
-    color: white;
-}
-
-/*
-small
-30em
-medium
-60em
-large
-*/
 
 @media screen and (max-width: 60em) {
     .hello-section {
         background-image: url('assets/images/me_mf.jpg');
         background-position: center;
     }
-    .mobile-first {
+    .fa-pencil-alt {
+        font-size: 10vh;
+    }
+    .order-first-nl {
         order: -1;
     }
-    .fa-main-icon {
-        font-size: 10vh;
+    .f1 {
+        font-size: 2.5rem;
     }
 }
