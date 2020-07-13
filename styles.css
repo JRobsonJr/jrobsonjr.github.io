@@ -50,6 +50,10 @@ a:hover {
     background-color: var(--dramatic-red);
 }
 
+.list {
+    padding-inline-start: 0;
+}
+
 .min-w-20 {
     min-width: 20%;
 }
