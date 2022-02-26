@@ -1,109 +1,164 @@
 :root {
-    --dramatic-black: #0b0313;
-    --dramatic-green: #4F6632;
-    --dramatic-navy: #163a96;
-    --dramatic-purple: #6c2490;
-    --dramatic-red: #9b1f35;
+  --dramatic-black: #0b0313;
+  --dramatic-green: #4f6632;
+  --dramatic-navy: #163a96;
+  --dramatic-purple: #6c2490;
+  --dramatic-red: #9b1f35;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.5;
-    color: white;
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: white;
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
-    color: white;
-    font-weight: bold;
+  color: white;
+  font-weight: bold;
 }
 
 a:hover {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .dramatic-green {
-    color: var(--dramatic-green);
+  color: var(--dramatic-green);
 }
 
 .bg-dramatic-black {
-    background-color: var(--dramatic-black);
+  background-color: var(--dramatic-black);
 }
 
 .bg-dramatic-green {
-    background-color: var(--dramatic-green);
+  background-color: var(--dramatic-green);
 }
 
 .bg-dramatic-navy {
-    background-color: var(--dramatic-navy);
+  background-color: var(--dramatic-navy);
 }
 
 .bg-dramatic-purple {
-    background-color: var(--dramatic-purple);
+  background-color: var(--dramatic-purple);
 }
 
 .bg-dramatic-red {
-    background-color: var(--dramatic-red);
+  background-color: var(--dramatic-red);
 }
 
 .list {
-    padding-inline-start: 0;
+  padding-inline-start: 0;
 }
 
 .min-w-20 {
-    min-width: 20%;
+  min-width: 20%;
 }
 
 .min-w-40 {
-    min-width: 40%;
+  min-width: 40%;
 }
 
 .min-vh-50 {
-    min-height: 50vh;
+  min-height: 50vh;
 }
 
-.fa-pencil-alt, .fa-headphones {
-    font-size: 25vh;
+.fa-pencil-alt,
+.fa-headphones {
+  font-size: 25vh;
+}
+
+.fa-compact-disc {
+  margin-right: 0.25rem;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
 }
 
 .align-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hello-section {
-    background-image: url('assets/images/me.jpg');
-    background-size: cover;
-    background-position: left;
-    font-family: 'Poppins', sans-serif;
+  background-image: url("assets/images/me.jpg");
+  background-size: cover;
+  background-position: left;
+  font-family: "Poppins", sans-serif;
 }
 
 .personal-section-picture {
-    background-image: url('assets/images/me.jpeg');
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-size: cover;
-    top: 0px;
+  background-image: url("assets/images/me2.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: cover;
+  top: 0px;
 }
 
 @media screen and (max-width: 60em) {
-    .hello-section {
-        background-image: url('assets/images/me_mf.jpg');
-        background-position: center;
-    }
-    .fa-pencil-alt, .fa-headphones {
-        font-size: 10vh;
-    }
-    .order-first-nl {
-        order: -1;
-    }
-    .f1 {
-        font-size: 2.5rem;
-    }
+  .hello-section {
+    background-image: url("assets/images/me_mf.jpg");
+    background-position: center;
+  }
+  .fa-pencil-alt,
+  .fa-headphones {
+    font-size: 10vh;
+  }
+  .order-first-nl {
+    order: -1;
+  }
+  .f1 {
+    font-size: 2.5rem;
+  }
+}
+
+@keyframes updown {
+  0%,
+  100% {
+    transform: translate3d(0, 25%, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -25%, 0);
+  }
+}
+
+.updown {
+  -webkit-animation-name: updown;
+  animation-name: updown;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@media (prefers-reduced-motion) {
+  .animated {
+    -webkit-animation: unset !important;
+    animation: unset !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
 }
